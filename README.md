@@ -23,47 +23,7 @@ A full-stack React and Vite clone of the modern, visually stunning digital agenc
 - **Animations:** GSAP (`gsap`, `@gsap/react`)
 - **Routing:** React Router DOM
 
-## Installation Instructions
 
-1. **Clone the repository** (if you haven't already):
-   ```bash
-   git clone <YOUR_REPOSITORY_URL>
-   cd k72-clone
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-## Usage Instructions
-
-To start the development server and view the website locally:
-
-```bash
-npm run dev
-```
-
-Open your browser and navigate to `http://localhost:5173/` (or the port specified in your terminal).
-
-## Folder Structure Overview
-
-```text
-├── public/                 # Static assets (fonts, images, videos)
-├── src/
-│   ├── components/         # Reusable UI components
-│   │   ├── Navigation/     # Navbar and FullScreenNav logic
-│   │   ├── common/         # Global components (e.g., Stairs transition)
-│   │   ├── home/           # Home-specific components
-│   │   └── projects/       # Projects-specific components
-│   ├── context/            # React Context providers (NavContext)
-│   ├── pages/              # Route components (Home, Agence, Projects, Contact, Blogue)
-│   ├── App.jsx             # Main routing configuration
-│   ├── index.css           # Global Tailwind CSS and custom keyframes
-│   └── main.jsx            # Application entry point
-├── package.json            # Project dependencies and scripts
-└── vite.config.js          # Vite configuration
-```
 
 ## Animation and GSAP Details
 
@@ -73,32 +33,12 @@ This project heavily utilizes **GSAP (GreenSock Animation Platform)** to drive i
 - **Staggered Text:** Used on the Home and Contact pages to create the signature line-by-line text reveal effect (`y: 100`, `opacity: 0`, with `stagger`).
 - **Page Transitions:** The `Stairs.jsx` component creates a cinematic multi-column wipe effect whenever the route changes.
 
-## Screenshots
-
-*(Placeholders - Add your own screenshots here)*
-
-![Home Page Screenshot](./public/placeholder-home.jpg)
-![Contact Page Screenshot](./public/placeholder-contact.jpg)
-
-## Deployment Instructions
-
-To build the application for production:
-
-```bash
-npm run build
-```
-
-This will generate a `dist` folder containing the optimized static assets. You can deploy this folder directly to static hosting platforms such as Vercel, Netlify, or GitHub Pages. 
-For example, to deploy to Vercel:
-1. Push your repository to GitHub.
-2. Import the project in Vercel.
-3. Vercel will automatically detect Vite and configure the build settings.
 
 ## Links
 
 - Original Website: https://k72.ca/
 - Reference Repository: https://github.com/saarthack/k72
-- Live Demo: [TO_BE_ADDED]
+- Live Demo: https://k72-ca-pu4d.vercel.app/
 
 ## Credits
 
