@@ -4,6 +4,8 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 
 
+gsap.registerPlugin(ScrollTrigger)
+
 const Projects = () => {
 
   const projects = [{
@@ -16,9 +18,6 @@ const Projects = () => {
     image1: 'https://k72.ca/uploads/caseStudies/LAMAJEURE_-_Son_sur_mesure/chalaxeur-thumbnail_img-1280x960.jpg',
     image2: 'https://k72.ca/uploads/caseStudies/SHELTON/thumbnailimage_shelton-1280x960.jpg'
   }]
-
-
-  gsap.registerPlugin(ScrollTrigger)
 
   useGSAP(function () {
     gsap.from('.hero', {

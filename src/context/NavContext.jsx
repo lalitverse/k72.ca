@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React, { createContext, useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
@@ -13,6 +14,7 @@ const NavContext = ({ children }) => {
     const locate = useLocation().pathname
     useEffect(function(){
         if(locate == '/projects' || locate == '/agence'){
+        // eslint-disable-next-line react-hooks/set-state-in-effect
             setNavColor('black')
         }else{
             setNavColor('white')

@@ -3,9 +3,9 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import { useRef } from 'react'
 
-const Agence = () => {
+gsap.registerPlugin(ScrollTrigger)
 
-  gsap.registerPlugin(ScrollTrigger)
+const Agence = () => {
 
   const imageDivRef = useRef(null)
   const imageRef = useRef(null)
