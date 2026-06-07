@@ -35,9 +35,9 @@ const Projects = () => {
   })
 
   return (
-    <div className='lg:p-4 p-2 mb-[100vh]'>
-      <div className=' pt-[45vh]'>
-        <h2 className='font-[font2] lg:text-[9.5vw] text-7xl uppercase'>Projets</h2>
+    <div className='lg:p-4 p-2 pb-24 lg:pb-32 min-h-screen'>
+      <div className='pt-32 lg:pt-48 pb-10'>
+        <h2 className='font-[font2] lg:text-[9.5vw] text-6xl md:text-7xl uppercase text-center lg:text-left'>Projets</h2>
       </div>
       <div className='-lg:mt-20 lol'>
         {projects.map(function (elem, idx) {
